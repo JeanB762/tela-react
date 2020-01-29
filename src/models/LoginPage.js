@@ -1,4 +1,6 @@
 import React from 'react';
+import Icon from 'react-native-vector-icons/FontAwesome';
+
 import { StyledView, StyledText, ButtonCustom, InputCustom } from '../style';
 
 const LoginPage = ({ navigation }) => (
@@ -11,7 +13,7 @@ const LoginPage = ({ navigation }) => (
 );
 
 LoginPage.navigationOptions = {
-  title: 'Login',
+  tabBarIcon: <Icon name="arrow-up" size={18} color="#999" />,
 }
 
 

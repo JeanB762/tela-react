@@ -1,7 +1,8 @@
 import React from 'react';
+import Icon from 'react-native-vector-icons/FontAwesome';
 import { StyledView, StyledText, ButtonCustom } from '../style';
 
-const MainPage = ({ navigation }) => (
+const HomePage = ({ navigation }) => (
   <StyledView>
     <StyledText marginTop={`50px`} fontSize={`35px`}>Hello World</StyledText>
     <ButtonCustom onPress={() => navigation.navigate('Main') }><StyledText margiTop={`0px`} fontSize={`26px`}>Main</StyledText></ButtonCustom>
@@ -9,8 +10,9 @@ const MainPage = ({ navigation }) => (
   </StyledView>
 );
 
-MainPage.navigationOptions = {
-  title: 'Main',
+HomePage.navigationOptions = {
+  tabBarIcon: <Icon name="home" size={18} color="#999" />
+
 }
 
-export default MainPage;
+export default HomePage;

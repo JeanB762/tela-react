@@ -1,4 +1,6 @@
 import React from 'react';
+import Icon from 'react-native-vector-icons/FontAwesome';
+
 import { StyledView, StyledText, ButtonCustom } from '../style';
 
 const MainPage = ({ navigation }) => (
@@ -10,7 +12,8 @@ const MainPage = ({ navigation }) => (
 );
 
 MainPage.navigationOptions = {
-  title: 'Main',
+  tabBarIcon: <Icon name="bars" size={18} color="#999" />
+
 }
 
 export default MainPage;
